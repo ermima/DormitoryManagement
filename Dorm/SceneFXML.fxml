@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sceneController">
+   <children>
+      <Label layoutX="242.0" layoutY="90.0" text="Login" textFill="#0178ff">
+         <font>
+            <Font name="Serif Bold" size="46.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUser" layoutX="194.0" layoutY="163.0" prefHeight="30.0" prefWidth="250.0" promptText="Username">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color green="0.4000000059604645" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <PasswordField fx:id="pass" layoutX="194.0" layoutY="222.0" prefHeight="30.0" prefWidth="250.0" promptText="Password">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color green="0.43095237016677856" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </PasswordField>
+      <Button fx:id="btnSignIn" layoutX="276.0" layoutY="284.0" mnemonicParsing="false" onAction="#SignIn" style="-fx-background-color: #0176ff;" text="SignIn" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <HBox prefHeight="52.0" prefWidth="700.0" style="-fx-background-color: #0176ff;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BIT Dormitory Management System" wrappingWidth="472.013671875">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <Label layoutX="238.0" layoutY="354.0" text="Don't have an account?" />
+      <Hyperlink fx:id="hyperlinkSignIn" layoutX="362.0" layoutY="351.0" onMouseClicked="#handleCreateAccount" text="Create here" />
+      <Pane layoutX="3.0" layoutY="60.0" prefHeight="341.0" prefWidth="124.0" style="-fx-background-color: #0176ff;">
+         <children>
+            <Text fill="#ffe1e1" layoutX="18.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BiT">
+               <font>
+                  <Font name="Serif Bold" size="54.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="84.0" fitWidth="94.0" layoutX="15.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../OIP.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+   </padding>
+</AnchorPane>

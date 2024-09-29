@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="968.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RoomController">
+   <children>
+      <HBox prefHeight="48.0" prefWidth="968.0" style="-fx-background-color: #054de9;">
+         <children>
+            <Text fill="#1a1a1b" strokeType="OUTSIDE" strokeWidth="0.0" text="BiT Dormitory Management System" textAlignment="CENTER" wrappingWidth="932.13671875">
+               <font>
+                  <Font name="Serif Regular" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <Label fx:id="labelWelcome" contentDisplay="CENTER" layoutX="185.0" layoutY="91.0" prefHeight="35.0" prefWidth="585.0" style="-fx-background-color: lightgrey;" textAlignment="CENTER" textFill="#ff0c45">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="studentIdTextField" layoutX="270.0" layoutY="183.0" prefWidth="350.0" promptText="Enter your Student ID" />
+      <Hyperlink fx:id="hyperlink" layoutX="270.0" layoutY="229.0" onAction="#handleRoomHyperlink" text="See your building and Room number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="348.0" layoutY="151.0" text="Enter your ID ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogOut" layoutX="850.0" layoutY="66.0" mnemonicParsing="false" onAction="#LogOutHandller" prefHeight="31.0" prefWidth="76.0" text="LogOut" textFill="#0c11f0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9599999785423279" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
